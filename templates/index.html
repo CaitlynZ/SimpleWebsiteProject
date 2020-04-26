@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This field contains information about web page">
+    <meta name="author" content="caitlyn zhang">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/javascript/script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="target" onClick="newStyle()">Caitlyn Zhang</h1>
+        <p>Here should be a nevigation bar:)</p>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="left">
+            <img src="../static/images/caitlyn.png" alt="caitlyn's picture" width="200px" class="profile-pic">
+            <h3>CS Student</h3>
+        </div>
+
+        <div class="right" id="2c">
+            <p>person intro</p>
+
+            <ul id="list" class="social-links">
+                {% for key, url in links.items() %}
+                <li><a href="{{url}}" , target="_blank">{{key}}</a></li>
+                {% endfor %}
+            </ul>
+
+            <p id="showMore" onClick="showMoreFunc()">click to see more...</p>
+
+            <form method="post">
+                <input class="button" type="submit" value="Download Resume" />
+            </form>
+        </div>
+
+    </div>
+
+    
+
+
+</body>
+
+</html>
