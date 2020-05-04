@@ -3,8 +3,7 @@ from flask import Flask, render_template, send_file, request
 app = Flask(__name__)
 
 links = {
-	"Github": "https://www.github.com",
-	"Facebook": "https://www.facebook.com/caitlyn.zhang.1",
+	"Github": "https://www.github.com/CaitlynZ/",
 	"LinkedIn": "https://www.linkedin.com/in/caitlynzhang/"
 }
 

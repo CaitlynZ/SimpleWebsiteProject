@@ -8,11 +8,11 @@ function newStyle() {
 }
 
 function showMoreFunc() {
-    let youtube = document.createElement("li");
-	youtube.innerHTML ="<a href= 'https://www.youtube.com'>YouTube</a>"
-
 	let instagram = document.createElement("li");
-	instagram.innerHTML ="<a href= 'https://www.instagram.com'>Instagram</a>";
+	instagram.innerHTML ="<a href= 'https://www.instagram.com/caitlynz67/'>Instagram</a>";
+
+        let facebook = document.createElement("li");
+	youtube.innerHTML ="<a href= 'https://www.facebook.com/caitlyn.zhang.1'>Facebook</a>";
 
 	document.getElementById("list").appendChild(youtube);
 	document.getElementById("list").appendChild(instagram);
